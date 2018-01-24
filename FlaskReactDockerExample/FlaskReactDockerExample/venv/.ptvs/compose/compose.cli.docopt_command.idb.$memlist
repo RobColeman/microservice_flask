@@ -1,0 +1,9 @@
+DocoptExit
+docopt
+absolute_import
+unicode_literals
+docopt_full_help
+getdoc
+NoSuchCommand
+get_handler
+DocoptDispatcher

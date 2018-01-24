@@ -1,0 +1,17 @@
+_parse_code
+partial
+CCodeWriter
+textwrap
+os
+StringIO
+Utils
+datetime
+absolute_import
+Version
+codecs
+re
+AnnotationCCodeWriter
+AnnotationItem
+_replace_pos_comment
+html_escape
+defaultdict

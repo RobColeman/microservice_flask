@@ -1,0 +1,10 @@
+os
+TestInline
+has_numpy
+tempfile
+numpy
+inline
+global_value
+test_kwds
+CythonTest
+safe_type

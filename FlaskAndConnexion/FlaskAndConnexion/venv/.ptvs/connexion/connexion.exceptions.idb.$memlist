@@ -1,0 +1,14 @@
+OAuthScopeProblem
+OAuthResponseProblem
+NonConformingResponseBody
+NonConformingResponseHeaders
+InvalidSpecification
+Forbidden
+ExtraParameterProblem
+NonConformingResponse
+OAuthProblem
+ProblemException
+problem
+ResolverError
+ConnexionException
+Unauthorized

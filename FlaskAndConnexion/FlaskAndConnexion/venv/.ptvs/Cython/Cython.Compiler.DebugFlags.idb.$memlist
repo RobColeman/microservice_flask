@@ -1,0 +1,8 @@
+debug_disposal_code
+debug_temp_alloc
+debug_trace_code_generation
+debug_temp_code_comments
+debug_coercion
+debug_no_exception_intercept
+debug_verbose_pipeline
+debug_exception_on_error

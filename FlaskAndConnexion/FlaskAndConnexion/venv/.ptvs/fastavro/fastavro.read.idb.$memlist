@@ -1,0 +1,15 @@
+__all__
+SYNC_SIZE
+LOGICAL_READERS
+reader
+read_data
+SchemaResolutionError
+MAGIC
+e
+_read
+acquaint_schema
+HEADER_SCHEMA
+READERS
+iter_avro
+is_avro
+schemaless_reader

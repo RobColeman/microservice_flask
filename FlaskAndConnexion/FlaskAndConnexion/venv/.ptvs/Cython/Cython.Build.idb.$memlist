@@ -1,0 +1,9 @@
+BuildExecutable
+IpythonMagic
+build_ext
+Distutils
+Tests
+cythonize
+Dependencies
+Inline
+Cythonize

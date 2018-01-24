@@ -1,7 +1,7 @@
 # users-service/manage.py
 
 from flask_script import Manager
-from project import app
+from project.app import app
 
 manager = Manager(app)
 

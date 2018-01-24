@@ -38,6 +38,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="users-service\manager.py" />
+    <Compile Include="users-service\project\app.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users-service\project\config.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="users-service\__init__.py">
       <SubType>Code</SubType>
     </Compile>

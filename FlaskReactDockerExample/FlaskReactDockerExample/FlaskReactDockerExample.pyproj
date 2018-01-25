@@ -4,15 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7849772e-4e62-4ee5-9738-21d85ff54292</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>users-service\manager.py</StartupFile>
+    <StartupFile>users-service\manage.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>FlaskReactDockerExample</Name>
     <RootNamespace>FlaskReactDockerExample</RootNamespace>
-    <InterpreterId>
-    </InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,11 +22,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="docker-compose-dev.yml" />
+    <Content Include="users-service\Dockerfile-dev" />
     <Content Include="requirements.txt" />
     <Content Include="all_dependancies.txt" />
+    <Content Include="users-service\requirements.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="users-service\manager.py" />
+    <Compile Include="users-service\manage.py" />
     <Compile Include="users-service\project\app.py">
       <SubType>Code</SubType>
     </Compile>
@@ -44,6 +46,17 @@
   <ItemGroup>
     <Folder Include="users-service\" />
     <Folder Include="users-service\project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Anaconda 5.0.1)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

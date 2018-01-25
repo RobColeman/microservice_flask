@@ -11,7 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>FlaskReactDockerExample</Name>
     <RootNamespace>FlaskReactDockerExample</RootNamespace>
-    <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>
+    </InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,17 +25,6 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="all_dependancies.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Interpreter Include="venv\">
-      <Id>venv</Id>
-      <Version>3.6</Version>
-      <Description>venv (Python 3.6 (64-bit))</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X64</Architecture>
-    </Interpreter>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="users-service\manager.py" />

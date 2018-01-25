@@ -1,6 +1,0 @@
-absolute_import
-TestCase
-StringIO
-Twill
-TwillTestCase
-twill

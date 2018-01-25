@@ -1,7 +1,0 @@
-urllib3
-HTTPAdapter
-SSLAdapter
-PoolManager
-match_hostname
-sys
-StrictVersion

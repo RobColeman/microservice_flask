@@ -1,9 +1,0 @@
-ignore_sigpipe
-ShutdownException
-set_signal_handler_to_shutdown
-set_signal_handler
-absolute_import
-unicode_literals
-signal
-IS_WINDOWS_PLATFORM
-shutdown

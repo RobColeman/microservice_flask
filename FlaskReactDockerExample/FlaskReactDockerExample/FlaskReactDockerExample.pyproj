@@ -26,6 +26,9 @@
     <Content Include="users-service\Dockerfile-dev" />
     <Content Include="requirements.txt" />
     <Content Include="all_dependancies.txt" />
+    <Content Include="users-service\entrypoint.sh" />
+    <Content Include="users-service\project\db\create.sql" />
+    <Content Include="users-service\project\db\Dockerfile" />
     <Content Include="users-service\requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +49,7 @@
   <ItemGroup>
     <Folder Include="users-service\" />
     <Folder Include="users-service\project\" />
+    <Folder Include="users-service\project\db\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

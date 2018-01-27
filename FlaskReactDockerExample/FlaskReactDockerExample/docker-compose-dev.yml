@@ -1,6 +1,7 @@
 version: '3.3'
 
 services:
+
   users-service:
     container_name: users-service
     build:
@@ -21,11 +22,11 @@ services:
 
   users-db:
     container_name: users-db
-      build:
-        context: ./users-service/project/db
-        dockerfile: Dockerfile
-      ports:
-        - 5435:5432
-      environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+    build:
+      context: ./users-service/project/db
+      dockerfile: Dockerfile
+    ports:
+      - 5435:5432
+    environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres

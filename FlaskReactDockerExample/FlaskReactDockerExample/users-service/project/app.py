@@ -16,7 +16,9 @@ app.config.from_object(app_settings)
 #print(app.config, file=sys.stderr)
 
 # instantiate the db
-db = SQLAlchemy(app)# User model
+db = SQLAlchemy(app)
+
+# User model
 class User(db.Model):
 
     # class level fields
@@ -29,7 +31,9 @@ class User(db.Model):
     def __init__(self, username, email):
         """ Object level fields"""
         self.username = username
-        self.email = email
+        self.email = email
+
+
 
 @app.route('/users/ping', methods=['GET'])
 def ping_pong():

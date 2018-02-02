@@ -33,10 +33,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="users-service\manage.py" />
+    <Compile Include="users-service\project\api\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users-service\project\api\users.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users-service\project\api\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="users-service\project\app.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="users-service\project\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users-service\project\test\base.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users-service\project\test\test_config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users-service\project\test\test_users.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users-service\project\test\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="users-service\__init__.py">
@@ -50,12 +71,14 @@
     <Folder Include="users-service\" />
     <Folder Include="users-service\project\" />
     <Folder Include="users-service\project\db\" />
+    <Folder Include="users-service\project\api\" />
+    <Folder Include="users-service\project\test\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="venv\">
       <Id>venv</Id>
       <Version>3.6</Version>
-      <Description>venv (Python 3.6 (64-bit))</Description>
+      <Description>venv (Anaconda 5.0.1)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>

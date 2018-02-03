@@ -1,10 +1,11 @@
 # users-service/project/tests/base.py
 
-from flask_testing import TestCase
-from project import app, db
+from flask_testing import TestCasefrom project.app import create_app, db
+
 class BaseTestCase(TestCase):
 
     def create_app(self):
+        app = create_app()
         app.config.from_object('project.config.TestingConfig')
         return app
 

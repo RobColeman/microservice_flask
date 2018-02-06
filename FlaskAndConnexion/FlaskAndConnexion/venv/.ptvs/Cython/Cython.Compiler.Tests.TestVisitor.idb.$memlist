@@ -1,9 +1,0 @@
-ModuleScope
-ModuleNode
-NormalizeTree
-MethodDispatcherTransform
-InterpretCompilerDirectives
-AnalyseExpressionsTransform
-AnalyseDeclarationsTransform
-TransformTest
-TestMethodDispatcherTransform

@@ -1,6 +1,0 @@
-test_cli
-test_jsonschema_test_suite
-test_exceptions
-compat
-test_validators
-test_format

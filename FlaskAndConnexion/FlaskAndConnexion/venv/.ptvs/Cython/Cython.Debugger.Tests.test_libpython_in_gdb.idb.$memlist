@@ -1,9 +1,0 @@
-libcython
-inferior_python_version
-os
-libpython
-test_libcython_in_gdb
-gdb
-_debug
-sys
-TestPrettyPrinters

@@ -1,9 +1,0 @@
-SwaggerValidationError
-six
-load_json
-json
-request
-wrap_exception
-TIMEOUT_SEC
-contextlib
-sys

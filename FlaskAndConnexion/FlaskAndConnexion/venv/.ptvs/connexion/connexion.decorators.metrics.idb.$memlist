@@ -1,6 +1,0 @@
-uwsgi_metrics
-time
-HAS_UWSGI_METRICS
-functools
-os
-UWSGIMetricsCollector

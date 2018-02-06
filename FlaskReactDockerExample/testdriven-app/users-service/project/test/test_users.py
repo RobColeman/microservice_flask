@@ -3,7 +3,7 @@
 import json
 import unittest
 
-from project.tests.base import BaseTestCase
+from project.test.base import BaseTestCase
 
 
 class TestUserService(BaseTestCase):
@@ -19,4 +19,5 @@ class TestUserService(BaseTestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()
+

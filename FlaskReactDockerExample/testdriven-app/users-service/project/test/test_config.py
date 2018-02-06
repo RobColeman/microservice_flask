@@ -1,8 +1,12 @@
-# users-service/project/tests/test_config.py
+# users-service/project/tests/test_config.py
+
 import os
 import unittest
 from flask import current_app
-from flask_testing import TestCasefrom project.app import create_app, db
+from flask_testing import TestCase
+
+from project import create_app, db
+
 
 class TestDevelopmentConfig(TestCase):
 
@@ -29,7 +33,6 @@ class TestTestingConfig(TestCase):
         app.config.from_object('project.config.TestingConfig')
         return app
 
-
     def test_app_is_testing(self):
         self.assertTrue(app.config['SECRET_KEY'] == 'my_precious')
         self.assertTrue(app.config['DEBUG'])
@@ -47,7 +50,6 @@ class TestProductionConfig(TestCase):
         app = create_app()
         app.config.from_object('project.config.ProductionConfig')
         return app
-
 
     def test_app_is_production(self):
         self.assertTrue(app.config['SECRET_KEY'] == 'my_precious')

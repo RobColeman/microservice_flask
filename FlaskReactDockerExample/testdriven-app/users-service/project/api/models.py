@@ -1,6 +1,6 @@
 # users-service/project/api/models.py
 
-from project.app import db
+from project import db
 
 
 class User(db.Model):
@@ -12,4 +12,6 @@ class User(db.Model):
     active = db.Column(db.Boolean(), default=True, nullable=False)
 
     def __init__(self, username, email):
-        self.username = username        self.email = email
+        self.username = username
+        self.email = email
+

@@ -229,7 +229,7 @@ FakesAssemblies/
 .ntvs_analysis.dat
 
 # Visual Studio 6 build log
-*.plg
+*.splg
 
 # Visual Studio 6 workspace options file
 *.opt
@@ -267,3 +267,5 @@ env*/
 **/venv*/
 **/env*/
 .env
+
+.DS_Store

@@ -17,6 +17,7 @@ class TestDevelopmentConfig(TestCase):
 
 
     def test_app_is_development(self):
+        app = self.create_app()
         self.assertTrue(app.config['SECRET_KEY'] == 'my_precious')
         self.assertTrue(app.config['DEBUG'])
         self.assertFalse(current_app is None)
@@ -34,6 +35,7 @@ class TestTestingConfig(TestCase):
         return app
 
     def test_app_is_testing(self):
+        app = self.create_app()
         self.assertTrue(app.config['SECRET_KEY'] == 'my_precious')
         self.assertTrue(app.config['DEBUG'])
         self.assertTrue(app.config['TESTING'])
@@ -52,6 +54,7 @@ class TestProductionConfig(TestCase):
         return app
 
     def test_app_is_production(self):
+        app = self.create_app()
         self.assertTrue(app.config['SECRET_KEY'] == 'my_precious')
         self.assertFalse(app.config['DEBUG'])
         self.assertFalse(app.config['TESTING'])

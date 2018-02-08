@@ -3,7 +3,7 @@
 import json
 import unittest
 
-from project.test.base import BaseTestCase
+from project.tests.base import BaseTestCase
 
 
 class TestUserService(BaseTestCase):

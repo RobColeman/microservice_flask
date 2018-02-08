@@ -11,7 +11,6 @@ from project.api.models import User
 app = create_app()
 manager = Manager(app)
 
-print(app.config, file=sys.stderr)
 
 @manager.command
 def test():
